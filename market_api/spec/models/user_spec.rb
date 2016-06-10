@@ -12,3 +12,8 @@ describe User do
 
   it {should be_valid}
 end
+
+describe "when email is not present" do
+  before {@user.eail= " "}
+  it { should_not be_valid }
+end
