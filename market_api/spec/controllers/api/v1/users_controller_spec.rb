@@ -14,6 +14,6 @@ describe Api::V1::UsersController do
       expect(user_response[:email]).to eql @user.email
     end
 
-    it {shoud respond_with 200}
+    it {should respond_with 200}
   end
 end
